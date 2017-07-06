@@ -15,7 +15,28 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNext()){
-            String str = sc.next();
+            int[] num = new int[200];
+            String str = sc.nextLine();
+            for (int i = 0; i < str.length() ; i++) {
+                char c = str.charAt(i);
+                int n = (int)c;
+                num[n]++;
+            }
+            int max = 0;
+            for (int i = 0; i < 200 ; i++) {
+                if(max<num[i]){
+                    max=num[i];
+                }
+            }
+            while (max!=0){
+                for (int i = 0; i < 200 ; i++) {
+                    if(num[i]==max){
+                        System.out.print((char)i);
+                    }
+                }
+                max--;
+            }
+            System.out.println();
         }
     }
 }
