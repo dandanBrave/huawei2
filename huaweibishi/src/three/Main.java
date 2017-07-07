@@ -64,8 +64,6 @@ public class Main{
 
         return false;
     }
-
-
 }
 class Point{
     String x;
