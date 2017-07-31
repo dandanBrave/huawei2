@@ -1,4 +1,4 @@
-package eithtyone;
+package eigthtyone;
 
 import java.util.Scanner;
 /**
