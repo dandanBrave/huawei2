@@ -13,7 +13,6 @@ public class Main {
             String strLong = sc.nextLine();
             System.out.println(boolIsAllCharExist(strShort,strLong));
         }
-
     }
     public static boolean boolIsAllCharExist(String pShortString, String pLongString) {
         for (int i = 0; i < pShortString.length() ; i++) {
@@ -24,4 +23,3 @@ public class Main {
         return true;
     }
 }
-
