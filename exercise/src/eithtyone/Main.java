@@ -1,7 +1,6 @@
 package eithtyone;
 
 import java.util.Scanner;
-
 /**
  * Created by Administrator on 2017/7/30.
  * 判断短字符串中的所有字符是否在长字符串中全部出现

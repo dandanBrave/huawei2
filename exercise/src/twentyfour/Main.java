@@ -1,5 +1,5 @@
 package twentyfour;
-
+//跳过了
 /**
  * Created by Administrator on 2017/7/4.
  * 题目描述
@@ -19,10 +19,11 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNext()){
             int N = sc.nextInt();
-            int[] height = {};
+            int[] height = new int[N];
             for (int i = 0; i < N; i++) {
                 height[i] = sc.nextInt();
             }
+
 
 
         }
