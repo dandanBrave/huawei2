@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/exercise/exercise.iml" filepath="$PROJECT_DIR$/exercise/exercise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/exercise/huawei.iml" filepath="$PROJECT_DIR$/exercise/huawei.iml" />
+      <module fileurl="file://E:\LDweb\huawei2\exercise\huawei.iml" filepath="E:\LDweb\huawei2\exercise\huawei.iml" />
       <module fileurl="file://$PROJECT_DIR$/huawei2.iml" filepath="$PROJECT_DIR$/huawei2.iml" />
       <module fileurl="file://$PROJECT_DIR$/huaweibishi/huaweibishi.iml" filepath="$PROJECT_DIR$/huaweibishi/huaweibishi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wangyiexercise/wangyiexercise.iml" filepath="$PROJECT_DIR$/wangyiexercise/wangyiexercise.iml" />
     </modules>
   </component>
 </project>
