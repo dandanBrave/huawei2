@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 /**
  * Created by Administrator on 2017/8/8.
  * 牛牛有一些字母卡片,每张卡片上都有一个小写字母,所有卡片组成一个字符串s。牛牛一直认为回文这种性质十分优雅,于是牛牛希望用这些卡片拼凑出一些回文串,但是有以下要求:
@@ -20,7 +19,6 @@ public class MakePalindrome {
             System.out.println(Palindrome(str));
         }
     }
-
     private static int Palindrome(String str) {
         int len = str.length();
         int count = 0;
