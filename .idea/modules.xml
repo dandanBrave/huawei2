@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/companyQuestion/companyQuestion.iml" filepath="$PROJECT_DIR$/companyQuestion/companyQuestion.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercise/exercise.iml" filepath="$PROJECT_DIR$/exercise/exercise.iml" />
       <module fileurl="file://E:\LDweb\huawei2\exercise\huawei.iml" filepath="E:\LDweb\huawei2\exercise\huawei.iml" />
       <module fileurl="file://$PROJECT_DIR$/huawei2.iml" filepath="$PROJECT_DIR$/huawei2.iml" />
