@@ -21,20 +21,29 @@ public class MakePalindrome {
     }
     private static int Palindrome(String str) {
         int len = str.length();
-        int count = 0;
+        int oddCount = 0;
+        int evenCount = 0;
         if(len<1||len>1000){
             return 0;
         }
         int[] sumOfLetter = new int[26];
+        // 找出字符串中奇数个出现的字符
         char[] letter = str.toCharArray();
         for (int i = 0; i < len ; i++) {
             sumOfLetter[letter[i]-'a']++;
         }
+        // 判断每个小写字母在字符串中出现的次数
         for (int i = 0; i < 26; i++) {
-            if(sumOfLetter[i]%2 != 0){
-                count++;
+            if(sumOfLetter[i]!=0&&sumOfLetter[i]%2 != 0){
+                oddCount++;
+            }
+            if(sumOfLetter[i]==0&&sumOfLetter[i]%2 == 0){
+                evenCount++;
             }
         }
-        return count;
+        if (oddCount == 0 & evenCount != 0)// 如果都是成对出现，最少能拼出一个，如abba
+            return 1;
+        else
+            return oddCount;
     }
 }
