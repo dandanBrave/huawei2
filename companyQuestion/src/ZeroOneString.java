@@ -28,7 +28,6 @@ public class ZeroOneString {
                 sum = count;
             }
             System.out.println(sum);
-
         }
     }
 }
