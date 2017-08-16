@@ -1,3 +1,4 @@
+import java.util.LinkedList;
 import java.util.Scanner;
 
 /**
@@ -12,19 +13,32 @@ public class OperateSequence {
             for (int i = 0; i < n ; i++) {
                 arr[i] = sc.nextInt();
             }
-            StringBuffer sb = new StringBuffer();
-            for (int i = 0; i < n; i++) {
-                sb.append(arr[i]).reverse();
-            }
-            String str = sb.toString();
-            char[] cStr = str.toCharArray();
-            StringBuffer result = new StringBuffer();
-            for (int i = 0; i < n-1 ; i++) {
-                result.append(cStr[i] + " ");
-            }
-            result.append(cStr[n-1]);
-            System.out.println(result.toString());
 
+            LinkedList list = new LinkedList();
+
+            int size = arr.length;
+            if(size%2==0){
+                for (int i = 0; i < n; i++) {
+                    if(i%2!=0){
+                        list.addFirst(arr[i]);
+                    }else {
+                        list.add(arr[i]);
+                    }
+                }
+            }else {
+                for (int i = 0; i < n; i++) {
+                    if(i%2==0){
+                        list.addFirst(arr[i]);
+                    }else {
+                        list.add(arr[i]);
+                    }
+                }
+            }
+
+            while(list.size()>1){
+                System.out.print(list.poll()+" ");
+            }
+            System.out.print(list.poll());
         }
     }
 }
