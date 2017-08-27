@@ -22,22 +22,25 @@ public class MaxStrength {
                 hs.add(y);
                 team.add(hs);
             }else{
-                //int flag = 0;
+                int flag = 0;
                 for (int j = 0; j < team.size() ; j++) {
                     if (team.get(j).contains(x) && !team.get(j).contains(y)) {
                         team.get(j).add(y);
-                       // flag = 1;
+                       flag = 1;
                         break;
                     } else if (!team.get(j).contains(x) && team.get(j).contains(y)) {
                         team.get(j).add(x);
-                        //flag = 1;
+                        flag = 1;
                         break;
                     }
                 }
-                HashSet<Integer> hs = new HashSet<Integer>();
-                hs.add(x);
-                hs.add(y);
-                team.add(hs);
+                if(flag == 0){
+                    HashSet<Integer> hs = new HashSet<Integer>();
+                    hs.add(x);
+                    hs.add(y);
+                    team.add(hs);
+                }
+
 
             }
         }
