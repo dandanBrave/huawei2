@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * Created by Administrator on 2017/9/1.
  */
-public class HyperLink {
+public class HyperLinkdd {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         while (sc.hasNext()){
