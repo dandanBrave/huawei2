@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//简单的直观方法，效率不好
 public class ZhengShuZhong1DeGeShu {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
