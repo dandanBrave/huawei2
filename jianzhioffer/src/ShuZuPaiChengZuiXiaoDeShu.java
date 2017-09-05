@@ -1,3 +1,4 @@
+import java.io.CharArrayReader;
 import java.util.*;
 
 /**
@@ -15,21 +16,21 @@ public class ShuZuPaiChengZuiXiaoDeShu {
     }
     public static String PrintMinNumber(int[] numbers) {
         ArrayList<Integer> al = new ArrayList<Integer>();
-        for (int i = 0; i < numbers.length; i++) {
+        for (int i = 0; i < numbers.length ; i++) {
             al.add(numbers[i]);
         }
-        Collections.sort(al, new Comparator<Integer>() {
+        Collections.sort(al,new Comparator<Integer>(){
             @Override
             public int compare(Integer str1, Integer str2) {
-                String s1 = str1 + "" + str2;
-                String s2 = str2 + ""+ str1;
-                return s1.compareTo(s2);
+               String s1 = str1 + "" + str2;
+               String s2 = str2 + "" + str1;
+               return s1.compareTo(s2);
             }
         });
-        String s = "";
+        StringBuilder sb = new StringBuilder();
         for (int i:al) {
-            s += i;
+            sb.append(i);
         }
-        return s;
+        return sb.toString();
     }
 }
